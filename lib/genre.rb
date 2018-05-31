@@ -29,8 +29,8 @@ class Genre
 
   def artists
     res=[]
-    Artist.all.each do |artist|
-      if artist.artist==self
+    self.songs.each do |song|
+      if song.artist==self
         res<<song
       end
     end
