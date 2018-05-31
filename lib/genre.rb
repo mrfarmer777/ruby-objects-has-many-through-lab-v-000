@@ -29,6 +29,7 @@ class Genre
 
   def artists
     res=[]
+    binding.pry
     self.songs.each do |song|
       res<<song
     end
