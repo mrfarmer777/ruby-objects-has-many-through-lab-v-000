@@ -29,7 +29,7 @@ class Genre
   end
 
   def artists
-    res=[]    
+    res=[]
     self.songs.each do |song|
       res<<song
     end
