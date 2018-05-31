@@ -2,7 +2,7 @@ require 'pry'
 
 class Artist
 
-  attr_accessor :name, :genres
+  attr_accessor :name, :genres, :songs
 
   @@all=[]
 
@@ -22,13 +22,13 @@ class Artist
   end
 
   def songs
-    res=[]
+    @songs=[]
     Song.all.each do |song|
       if song.artist==self
         res<<song
       end
     end
-    res
+    @songs
   end
 
   def genres
