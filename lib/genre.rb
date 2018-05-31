@@ -10,12 +10,12 @@ class Genre
 
   def initialize(name)
     @name=name
-
     @@all<<self
   end
 
   def new_song(name, artist)
-    song=Song.new(name,artist,self)
+    new_artist=Arist.new(artist)
+    song=Song.new(name,new_artist,self)
   end
 
   def songs
