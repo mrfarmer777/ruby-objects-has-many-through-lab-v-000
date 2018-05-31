@@ -2,13 +2,13 @@ require 'pry'
 
 class Artist
 
-  attr_accessor :name, :genres, :songs
+  attr_accessor :name, :genres, 
 
   @@all=[]
 
   def initialize(name)
     @name=name
-    @songs=[]
+  
     @@all<<self
   end
 
@@ -22,13 +22,13 @@ class Artist
   end
 
   def songs
-    @songs=[]
+    res=[]
     Song.all.each do |song|
       if song.artist==self
         res<<song
       end
     end
-    @songs
+    res
   end
 
   def genres
