@@ -10,7 +10,7 @@ class Genre
 
   def initialize(name)
     @name=name
-    binding.pry
+    
     @@all<<self
   end
 
