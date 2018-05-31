@@ -30,7 +30,7 @@ class Genre
   def artists
     res=[]
     Artist.all.each do |artist|
-      if artist.genre==self
+      if artist.artist==self
         res<<song
       end
     end
