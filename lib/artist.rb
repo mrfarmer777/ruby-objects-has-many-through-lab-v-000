@@ -36,6 +36,7 @@ class Artist
     self.songs.each do |song|
       res<<song.genre
     end
+    res
   end
 
 
