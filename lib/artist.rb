@@ -22,8 +22,7 @@ class Artist
   end
 
   def songs
-    res=[]
-    binding.pry
+    res=[]  
     Song.all.each do |song|
       if song.artist==self
         res<<song
