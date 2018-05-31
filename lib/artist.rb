@@ -16,7 +16,7 @@ class Artist
 
   def new_song(name,genre)
     song=Song.new(name,genre)
-    song.artist=self    
+    song.artist=self
   end
 
   def songs
@@ -29,9 +29,9 @@ class Artist
     res
   end
 
-  def genres    
+  def genres
     self.songs.collect {|song| song.genre}
-  end      
-  
+  end
+
 
 end
