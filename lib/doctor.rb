@@ -12,5 +12,7 @@ class Doctor
     @@all<<self
   end
 
+
+
+
 end
-  
